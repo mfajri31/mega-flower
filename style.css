@@ -1,9 +1,9 @@
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.9rem;
-  color: #000;
-  text-shadow: 1px 1px 1px #fff;
+  /* color: #000; */
+  /* text-shadow: 1px 1px 1px #fff; */
 }
 
 #svg {
@@ -11,7 +11,7 @@ body {
   width: 100%;
   height: 100%;
   cursor: pointer;
-  filter: drop-shadow(0 0 4px #000);
+  /* filter: drop-shadow(0 0 4px #000); */
 }
 
 .flower path {
@@ -22,14 +22,14 @@ body {
 .layer {
   animation-name: layerAnim1;
   animation-duration: 4s;
-  animation-fill-mode: both; 
+  animation-fill-mode: both;
   transform-box: fill-box;
   transform-origin: center center;
 }
 
 .layer path {
-  stroke: rgba(0, 0, 0, 0.7);
-  stroke-width: 0.75px;
+  /* stroke: rgba(0, 0, 0, 0.7); */
+  /* stroke-width: 0.75px; */
 }
 
 a {
@@ -39,11 +39,12 @@ a {
   transition: all 0.4s;
 }
 a:hover {
-  color: #000;
-  border-bottom-color: rgba(0, 0, 0, 0.7);
+  /* color: #000; */
+  /* border-bottom-color: rgba(0, 0, 0, 0.7); */
 }
 
-header, footer {
+header,
+footer {
   position: absolute;
   width: 100%;
   text-align: center;
@@ -61,36 +62,77 @@ footer {
     filter: none;
   }
   .layer {
-    filter: drop-shadow(0 0 2px #000);
+    /* filter: drop-shadow(0 0 2px #000); */
   }
 }
 
 @keyframes layerAnim1 {
-  from, to { animation-timing-function: ease-out; }
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from,
+  to {
+    animation-timing-function: ease-out;
+  }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes layerAnim2 {
-  from, to { animation-timing-function: ease-out; }
-  from { opacity: 0; transform: scale3d(0.2, 0.2, 0.2); }
-  to { opacity: 1; transform: scale3d(1, 1, 1); }
+  from,
+  to {
+    animation-timing-function: ease-out;
+  }
+  from {
+    opacity: 0;
+    transform: scale3d(0.2, 0.2, 0.2);
+  }
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
 }
 
 @keyframes layerAnim3 {
-  from, to { animation-timing-function: ease-out; }
-  from { opacity: 0; transform: rotateZ(-270deg); }
-  to { opacity: 1; opacity: 1; transform: rotateZ(0deg); }
+  from,
+  to {
+    animation-timing-function: ease-out;
+  }
+  from {
+    opacity: 0;
+    transform: rotateZ(-270deg);
+  }
+  to {
+    opacity: 1;
+    opacity: 1;
+    transform: rotateZ(0deg);
+  }
 }
 
 @keyframes layerAnim4 {
-  from, to { animation-timing-function: ease-out; }
-  from { opacity: 0; transform: rotateZ(360deg) scale3d(0.2, 0.2, 0.2); }
-  to { opacity: 1; opacity: 1; transform: rotateZ(0deg) scale3d(1, 1, 1); }
+  from,
+  to {
+    animation-timing-function: ease-out;
+  }
+  from {
+    opacity: 0;
+    transform: rotateZ(360deg) scale3d(0.2, 0.2, 0.2);
+  }
+  to {
+    opacity: 1;
+    opacity: 1;
+    transform: rotateZ(0deg) scale3d(1, 1, 1);
+  }
 }
 
 @keyframes layerAnim5 {
-  from, 20%, 40%, 60%, 80%, to {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 
@@ -122,7 +164,12 @@ footer {
 }
 
 @keyframes layerAnim6 {
-  from, 20%, 40%, 60%, 80%, to {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 
@@ -154,7 +201,12 @@ footer {
 }
 
 @keyframes layerAnim7 {
-  from, 20%, 40%, 60%, 80%, to {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 
@@ -186,25 +238,61 @@ footer {
 }
 
 @keyframes layerAnim8 {
-  from, to { animation-timing-function: ease-out; }
-  from { opacity: 0; transform: rotate3d(1, 1, 1, 360deg); }
-  to { opacity: 1; transform: rotate3d(1, 1, 1, 0deg); }
+  from,
+  to {
+    animation-timing-function: ease-out;
+  }
+  from {
+    opacity: 0;
+    transform: rotate3d(1, 1, 1, 360deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate3d(1, 1, 1, 0deg);
+  }
 }
 
 @keyframes layerAnim9 {
-  from, to { animation-timing-function: ease-out; }
-  from { opacity: 0; transform: rotate3d(1, 1, 1, 360deg) scale3d(0.1, 0.1, 0.1); }
-  to { opacity: 1; transform: rotate3d(1, 1, 1, 0deg) scale3d(1, 1, 1); }
+  from,
+  to {
+    animation-timing-function: ease-out;
+  }
+  from {
+    opacity: 0;
+    transform: rotate3d(1, 1, 1, 360deg) scale3d(0.1, 0.1, 0.1);
+  }
+  to {
+    opacity: 1;
+    transform: rotate3d(1, 1, 1, 0deg) scale3d(1, 1, 1);
+  }
 }
 
 @keyframes layerAnim10 {
-  from, to { animation-timing-function: ease-out; }
-  from { opacity: 0; transform: scale3d(2, 2, 2); }
-  to { opacity: 1; transform: scale3d(1, 1, 1); }
+  from,
+  to {
+    animation-timing-function: ease-out;
+  }
+  from {
+    opacity: 0;
+    transform: scale3d(2, 2, 2);
+  }
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
 }
 
 @keyframes layerAnim11 {
-  from, to { animation-timing-function: ease-out; }
-  from { opacity: 0; transform: rotateZ(-360deg) scale3d(2, 2, 2); }
-  to { opacity: 1; transform: rotateZ(0deg) scale3d(1, 1, 1); }
+  from,
+  to {
+    animation-timing-function: ease-out;
+  }
+  from {
+    opacity: 0;
+    transform: rotateZ(-360deg) scale3d(2, 2, 2);
+  }
+  to {
+    opacity: 1;
+    transform: rotateZ(0deg) scale3d(1, 1, 1);
+  }
 }
